@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html />
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello - Http Fundamentals</title>
+        <script type="text/javascript">
+            function getDate() {
+                var today = new Date();
+                var formattedDate = (today.getMonth() + 1) + "-" + (today.getDate()) + "-" + (today.getFullYear());
+                document.getElementById("datetext").innerHTML = formattedDate;
+            }    
+        </script>
+    </head>  
+    <body onload="getDate();">   
+        <a href="signup.cshtml">Sign Up</a>
+        <p id="datetext"></p>
+    </body>
+</html>
